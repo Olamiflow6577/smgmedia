@@ -2605,8 +2605,6 @@ h6 {
 .testimonial_area {
   background: url(../img/testi-bg.jpg) no-repeat center; }
   @media (max-width: 991px) {
-    .testimonial_area {
-      background-image: none; }
       .testimonial_area .testimonial-img {
         display: none; } }
   .testimonial_area .testimonial_logos {
