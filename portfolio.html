@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>SMGMEDIA ENTERPRISES - Portfolio</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#090F72",
+            "secondary": "#8AC9FF",
+            "background-light": "#FFFFFF",
+            "background-dark": "#000000",
+            "text-light": "#000000",
+            "text-dark": "#FFFFFF",
+          },
+          fontFamily: {
+            "display": ["Extenda", "sans-serif"],
+            "body": ["Latinka", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style type="text/tailwindcss">
+    @font-face {
+        font-family: 'Extenda';
+        src: url('https://d33wubrfki0l68.cloudfront.net/3d9f210948956461975e5336594c3d6995642a49/8e3a9/fonts/extenda/extenda-hako-regular.woff2') format('woff2'),
+             url('https://d33wubrfki0l68.cloudfront.net/446a86c6734138e6a27d2c363bf4a9058b8e0717/3bf97/fonts/extenda/extenda-hako-regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Latinka';
+        src: url('https://d33wubrfki0l68.cloudfront.net/a1a1f09a505b223a2b16a247291a27e7b7f14b6d/c9f95/fonts/latinka/latinka-regular.woff2') format('woff2'),
+             url('https://d33wubrfki0l68.cloudfront.net/2f3a538222956c39a3f2b45e9d997d91e8477002/91629/fonts/latinka/latinka-regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+    body {
+        font-family: 'Latinka', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Extenda', sans-serif;
+    }
+    .group:hover .group-hover\:block {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-body text-text-light dark:text-text-dark">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_543">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+<h1 class="text-xl font-bold font-display text-text-light dark:text-text-dark">SMGMEDIA ENTERPRISES</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Work</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<button class="bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-lg hover:bg-primary/90 transition-colors">Let's Talk</button>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-5xl font-bold tracking-tighter text-text-light dark:text-text-dark mb-12 font-display">Selected Work</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRNuwF6i-H_l0brHWu6NV2iVhWMhLfTi48tQHfGRFp-o32fvPNXx5bHNpq9z0gd8jlzrI_14aD0nqf1ZNuALpyjhFSgoL9tZhAB9aW7azlhQzc8zubnf8l91q8dT9yRSB0NLELjq4qcJGXhVJL6TSF3PUaMV_mUMf9ypU17_Z5cCnSdowAm3UTY0LSqLu7uPgatPPkQIUTAeyvPAH5-_WoDuPkYwCZ-_xanFlkvd_Q-3u4FCatL54LGw1raJiVN_OFG-fKiXwDlPwv");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title One</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Brand Identity, Web Design</p>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW5B-FkEFtyORkAf5BdJH9nuG6v1adsxtgS-Y-L0LqypKgrCqZ0kMJSDgpUGlsnpmkVMSs65tk4pQxD2l6rsbWRHiYJuGCYzlzNm7u9zclkpNmSYmMDlSzARiOqFSVt2I7xD8PiuPkAyYcieKFTMV-o_bYrGHCxVXqszF3Z4wwzyKAQTwDd2d1opq7raxwIf8JcnX9dTde2qB4cEtbGy57VWI88LqQ7pjtTKXxvx0ocF1Mhp6BFsMvAPTGwzhP1JQ2G91g8tFV96uy");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title Two</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Video Production</p>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwWREKXRTk8H5FOl9WybwOM43t63q2HIwz1SdBq7dPRnkknhK_tOsiUr0JtwUy0vPHcU4UpgPnoxvCXMI_UcNrCX6pSdvkOXzNqMK-bBQnasZxg8SxZFVNRRUBl0mvdDhhfP9pXVWZkxtsxlliKCKH5YwFfLT8I_wbw1EOxHcs7Uc7L9H-7BXTia56GJWIFVAJ-IgM5pXxmLIgqCnWZLvjt3iewW1YaXMPdLejrUhA7bVPc6bYmPe16OqIvYJH3m394NZK_ArasV37");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title Three</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Social Media Campaign</p>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCmhnKrqhJ85LirTRFlSftVuAtdQWmqaCewEGz6AFFDGBBzG-cSKwHXARfsM9Ej7hBM99fTAhTp8g9sh2D_fi5aBBCTmo3uIgEyEa3s5g1r_Jjjfoq5037tHay7YUryGB3AXM0HVW87_Yhdo6N3-9L7cgNgflwVAv1bW17Is-PvxxngdUzM5BRQBW98PKe6CMSdJteJX-M50zTjK0KtT_KO_kVEhFbJvsAU9d3ZwzTkrObdD8sviZUpNmHCelKurR31ZW7HsFOaD5xa");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title Four</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Motion Graphics</p>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQv3DLnzRyjazcCBNZowriDxfKuG_TNrngRx9lMgd5QMrr2z3-raOOufqcFEzlCYBcXZW8Q_g5m6H0EGebvHpMerzpvTGXT5m5LXmNCDb-RNGYol0w9kRJt_wP1hA4Owc9wx0F25LW7ydsKUI4BeSThIUKrs5NA3eG7MEsHDjoYxUMIaO8snYCer0kVauEXaTDmyo55jQjvPZV9V3hSn_aOl95BfhfVGJdilxsvSqgK2bc0_TSjL97qhvp77-dwzgqnEVx4t0sHU7h");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title Five</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Photography</p>
+</div>
+</a>
+<a class="group block" href="#">
+<div class="overflow-hidden rounded-xl">
+<div class="w-full h-0 pb-[56.25%] bg-cover bg-center rounded-xl transform group-hover:scale-105 transition-transform duration-500" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtizX8inSZBo11VNJcZIvzMHavo1lEX4XqTTCtH_HJZinzXFHPRRTsevUFhdhvztd4ZmYxumm8EyxUcHMpl10iZMsNgrb-dXRR9l0taUG5tssHABNTmOXZVqf7LaxTKtZZlvnMzgzfMsr9gtlWEiCoeyYz-8bhw99RjdOZ5pFKSyaBwNC6Dof5Gh8MOv6RX6D3i_srdhHeq9jI3jxa7PbJc5KT8cHlXe1lSzCrcuuGxrrrmv6C6ThDqSst9c2i35F5mnU_B7jDKFXP");'></div>
+</div>
+<div class="mt-4">
+<h3 class="text-lg font-bold font-display text-text-light dark:text-text-dark">Project Title Six</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">UX/UI Design</p>
+</div>
+</a>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-gray-200 dark:border-gray-700">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex gap-6">
+<a class="text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors" href="#">
+<img alt="Instagram" class="w-6 h-6 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-wPL9JYdsqU2pIeV0dvtZyJ1TALVzpKv-EBMRRmI4nh6KSA_3yYrVym0mK26BAwxLoZ185ZeXzN4QtsCYuyhNMHw6gyqNLAwbEEAEqgZ8IMZLlakhglLjckB-lq5eMxxk-lCtdq_-7WeRenuXAaqvn6wpUF8e4n3S-w18KdT8VVMOQDQoDy-af1KhtPJUwVRTBeRfLHdNwoKSaDfcSN1x2hA5ly7w0ZMcTCY9G1FwkUPgteIbMfzAa9tXXt2vduDHjtcjCZIghZ5i"/>
+</a>
+<a class="text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors" href="#">
+<img alt="Facebook" class="w-6 h-6 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_oSYF3ZMtgp_P7Aq3JkmPthM-JgUNL0IS8qvzh19iM6AmhGQUUhSEsztE-0uFltGcFgkp6xv9LrHKtrxehMhnWfp44ADLDLJyE94goc-vStWALdeArXlCvbmC8hOd7E10jyamQj8iAiqC0UUWj1CiEKuR5TOGfQh9MyjaDn1Zpv8NEvWJqYwp8j1MRnihhaLG8OChvjvRnuhLSQv7oV1nQJScWprwGUmc7MG6f8Gtrg4vpv2s_F2oUg0qsCk9aKzhroGuuDUKXO4h"/>
+</a>
+<a class="text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors" href="#">
+<img alt="LinkedIn" class="w-6 h-6 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCalxJNGcdIzM6wjoSDWoZSq9GfKO277FAwuQJmlJM6rZwFfAGgAOAGfDC3V2lKckSKb7AIE4Gw22QZPbJ4rYkQKwAazWkiqwlbT0mIcV4DY2l9zaT7VDLYCAYge4w5NBVk2ozsR2xz5DOGJ5e38UiBHyGqxNV1fEOCMUnmqzApDxGnAXNVkI0NlHdn_JtuYH5mSLf6U4nXE5r6NmIBTCP2KPFvpTQZ8--ZUVj7d3GkUvywq3N7LWFsqpnkZbpYiRDGbXtbbU7wGnoj"/>
+</a>
+<a class="text-gray-400 hover:text-primary dark:hover:text-secondary transition-colors" href="#">
+<img alt="Twitter" class="w-6 h-6 dark:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTTmRgNNPZ-hDGa1RNu7vdbDR8-tWvSn80MHiTD0T2yyjEe4QtW2pl7D-70kUzXx-zv8v8RxcjIex1k5xQOyElw1xkbP6-orl_3WT6DnMVo0trIkH0ZjDRQoe7ub91A-vi8AwNgli_3P37JeEaZwx-NpXZiWmCF6gcmTvWGMi_PxyO25VU1rzu6CWp1gW9errgkqBLJ1c0o-XyWBVMxqqz_u5cmPgfE1in-k4z4sTZS2TcxUwPd1q9dzdtNIh6elODPW4meCLG3m3m"/>
+</a>
+</div>
+<div class="flex gap-6 text-sm text-gray-500 dark:text-gray-400">
+<a class="hover:text-primary dark:hover:text-secondary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary dark:hover:text-secondary transition-colors" href="#">Terms of Service</a>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 font-body">© 2024 SMGMEDIA ENTERPRISES. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
